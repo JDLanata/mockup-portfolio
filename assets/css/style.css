@@ -1,13 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 :root{
     --dark: #250680;
    --light: #0CC2ED;
    --text: #0040E0;
    --hover: #F0E90C;
 }
-body{
-    background-color: salmon;
-}
 
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+}
+h2{
+ color: var(--text);
+ border-right:  2px solid var(--text);
+ 
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -28,41 +42,35 @@ nav ul {
     text-decoration: none;
   }
 
-.about {
-    height: 25%;
-padding: 50px;
-margin-bottom: 20px;
-}
-.about h2
-{
+  .areatitle{
     margin-right: 20px;
     padding: 20px;
     clear: both;
     float: left;
     width: 20%;
     height: 200px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-right:  2px solid var(--dark);
+    text-justify: right;
 }
+  
+.about {
+    height: 25%;
+    padding: 50px;
+    margin-bottom: 20px;
+}
+
 p{
     position: relative;
     left: -10px;
 }
 .box {
+
     height: 25%;
     padding: 50px;
     margin-bottom: 20px;
     border: dashed var(--light);
 }
 .box h2{
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: left;
-    width: 20%;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border:  2px solid var(--dark);
+     height: 300px;   
 }
 
 .box figure{
@@ -80,14 +88,4 @@ p{
     height: 25%;
     padding: 50px;
     margin-bottom: 20px;
-}
-.reach h2{
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: left;
-    width: 20%;
-    height: 200px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-right:  2px solid var(--dark);
 }
