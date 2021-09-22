@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
 :root{
     --dark: #250680;
-   --light: #0CC2ED;
-   --text: #0040E0;
-   --hover: #F0E90C;
+    --light: #0CC2ED;
+    --text: #0040E0;
+    --hover: #F0E90C;
 }
 
 ul{
@@ -17,74 +17,157 @@ ul{
     justify-content: space-between;
     min-width: 300px;
 }
-h2{
- color: var(--text);
- border-right:  2px solid var(--text);
- 
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1%;
-    background-color: var(--light);
+    background-color: var(--dark);
     color: var(--text);
-  }
+    width: 100vw;
+}
+header h1{
+    background-color: var(--light);
+}
+
+
 nav ul {
     display: flex;
     justify-content: space-between;
     min-width: 300px;
-  }
-  
-  nav a {
-    color: var(--text);
-    font-weight: bold;
-    text-decoration: none;
-  }
+    color: var(--light);
+    list-style: none;
+}
 
+nav a {
+    color: var(---light);
+    font-weight: bold;
+    text-underline-position: below;
+}
+/* buffer header area */
+.buffer{
+    height: 100px;
+    width: 100vw;
+    background-image: url(../images/nivenn-lanos-TgzFdow4HBQ-unsplash\ \(1\).jpg);
+    float: left;
+    position: relative;
+}
+.buffer img{
+    width: 100vw;
+    height: 150px;
+    float: left;
+}
+
+.buffer h2{
+    color: var(--text);
+    background-color: var(--light);
+    display: flex;
+}
+/* page .content */
+
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--text);
+    border-left: solid var(--text);
+    height: 25%;
+    padding: 50px;
+    margin-bottom: 20px;
+}
   .areatitle{
-    margin-right: 20px;
+    margin-right: -20px;
     padding: 20px;
     clear: both;
     float: left;
     width: 20%;
-    height: 200px;
-    text-justify: right;
+    height: 200%;
+    text-indent: 75%;
+    color: var(--light);
+    
+
 }
   
-.about {
-    height: 25%;
-    padding: 50px;
-    margin-bottom: 20px;
-}
 
-p{
-    position: relative;
-    left: -10px;
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.content img{
+    width: 100%;
+    height: 100%;
+    color: var(--text);
+  
+
 }
 .box {
-
-    height: 25%;
     padding: 50px;
     margin-bottom: 20px;
     border: dashed var(--light);
 }
-.box h2{
-     height: 300px;   
+
+.surf{
+    display: flex;
+    flex-flow: column wrap;
+    height: auto;
+    width: auto;
+    /* flex: 0 0 auto;  */
+    row-gap: 2%;
+    justify-content: flex-end;
+    margin: 15px;
+    flex-grow: 1;
+    padding: 5%;
 }
 
-.box figure{
+
+.surf div{
+    background-color: var(--light);
+    position: absolute;
+    
+}
+.surf img{
+    outline: 5px solid var(--light);
+ 
+}
+
+.card{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: flex-start;
-    min-height: 100%;
-    padding: 2rem;
+    flex: 0 0 auto;
+    min-height: auto;
+    /* min-width: ; */
+    max-height: 100px;
+    row-gap: 20px;
+   
+    justify-content: center;
+    margin: 15px;
+
     color: var(--heliotrope);
-    outline: 2px dashed var(--light);
+    background-color: seagreen;
+    outline: 5px solid var(--light);
     outline-offset: -2px;
-    transition: all 0.5s ease-in-out;
+
+
+}
+
+.text{
+    position: absolute;
+    background-color: var(--light);
+    color: var(--text);
+}
+.card div{
+    background-color: var(--light);
+    /* flex-wrap: wrap; */
+    position: absolute;
 }
 .reach {
+    /* position: relative; */
+    display: flex;
+    flex-wrap: wrap;
     height: 25%;
     padding: 50px;
     margin-bottom: 20px;
