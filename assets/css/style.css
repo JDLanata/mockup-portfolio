@@ -128,35 +128,17 @@ nav a {
 }
 
 /* individial boxes */
-.card{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    flex: 0 1 auto;
-    min-height: auto;
-    max-height: 100px;
-    row-gap: 20px;
-   
-    justify-content: center;
-    margin: 15px;
 
-    color: var(--heliotrope);
-    background-color: seagreen;
-    outline: 5px solid var(--light);
-    outline-offset: -2px;
-
-
-}
 
 .text{
     position: absolute;
     background-color: var(--light);
     color: var(--text);
 }
-.card div{
+/* .card div{
     background-color: var(--light);
     position: absolute;
-}
+} */
 .reach {
     flex-wrap: wrap;
     height: 25%;
